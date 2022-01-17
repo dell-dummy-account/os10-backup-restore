@@ -1,0 +1,6 @@
+[switches]
+#list of device under test
+leaf-1 ansible_host=10.10.10.11 ansible_network_os=dellemc.os10.os10
+leaf-2 ansible_host=10.10.10.12 ansible_network_os=dellemc.os10.os10
+
+#... expand as needed
