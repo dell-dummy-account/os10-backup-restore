@@ -18,22 +18,22 @@ Please check if the configuration example is aligned to what is needed.
 1-
 Install Git and clone the project
 
-sudo apt update
-sudo apt -y install git
-git clone https://github.com/val3r1o/os10-backup-restore.git
+sudo apt update </br>
+sudo apt -y install git </br>
+git clone https://github.com/val3r1o/os10-backup-restore.git </br>
 
 2-
-Create your own Github repository so you can sync on your own space
-Change the name based on your github and project
-Please check the file -> Create-Github-account.txt
+Create your own Github repository so you can sync on your own space</br>
+Change the name based on your github and project</br>
+Please check the file -> Create-Github-account.txt</br>
 
 3-
 When ready run:
 
-./backup.sh
-if github sync is needed or 
+./backup.sh</br>
+if local and github sync is needed or 
 
-ansible-playbook -i inventory copyconfig.yml
+ansible-playbook -i inventory copyconfig.yml</br>
 if only local backup is needed
 
 All configurations are stored on this local folder:
