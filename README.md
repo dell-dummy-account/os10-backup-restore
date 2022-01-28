@@ -29,7 +29,12 @@ Please check the file -> Create-Github-account.txt
 
 3-
 When ready run:
+
 ./backup.sh
+if github sync is needed or 
+
+ansible-playbook -i inventory copyconfig.yml
+if only local backup is needed
 
 All configurations are stored on this local folder:
 /configs
@@ -38,11 +43,10 @@ All configurations are stored on this local folder:
 # How To Use it (restore)
 
 Run the Ansible playbook to push the configs under /templates (jinja template) into your OS10 node
-
 This example uses the dellos.dellos-copy-config role to push the configuration file into the device
 
 1-
-ansible-playbook -i inventory pushconfig2.yml
+ansible-playbook -i inventory pushconfig.yml
 
 
 # note
