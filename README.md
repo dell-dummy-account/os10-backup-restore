@@ -2,10 +2,16 @@
 Backup file from OS10 nodes and save locally and sync on GitHub</br>
 Restore file from GitHub and push to OS10 nodes
 
-Backup.sh is a script to launch BOTH local back-up and sync on your git repository
+Backup.sh is a script to launch BOTH local back-up and sync on your github repository
+
 The Ansible Palybook (copyconfig.yml) is made to create automatic backup of all switches on local folder /config  
-It save the file in .txt with date/time tag but also in jinja format.
+It save the file in .txt with date/time tag but also in jinja format under /templates
+
 You can decide to use only the Ansible playbook and skip the script if github sync is not of inyterest.
+
+The Ansible Playbook (pushconfig.yml) is made to push the jinja configuration to all OS10 switches 
+This repository is coming with 2 jinja templates as example and can be "pushed" to OS10 nodes as first step. 
+Please check if the configuration example is aligned to what is needed.
 
 # How To Use it (backup)
 
