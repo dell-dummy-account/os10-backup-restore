@@ -5,6 +5,7 @@ Restore file from GitHub and push to OS10 nodes
 Backup.sh is a script to launch BOTH local back-up and sync on your git repository
 The Ansible Palybook (copyconfig.yml) is made to create automatic backup of all switches on local folder /config  
 It save the file in .txt with date/time tag but also in jinja format.
+You can decide to use only the Ansible playbook and skip the script if github sync is not of inyterest.
 
 # How To Use it (backup)
 
@@ -28,7 +29,7 @@ All configurations are stored on this local folder:
 /configs
 /templates
 
-# How To Use it (Restore)
+# How To Use it (restore)
 
 Run the Ansible playbook to push the configs under /templates (jinja template) into your OS10 node
 
