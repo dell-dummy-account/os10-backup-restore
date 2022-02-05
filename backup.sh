@@ -10,16 +10,13 @@ echo ---------------------------------------------------------------------------
 #change the name as your project needs, check EVPN multisite or EVPN DCI for further examples 
 ansible-playbook -i inventory copyconfig.yml
 
+git status
 read -p "Enter Your user.name: " n
 read -p "Enter Your user.mail: " m
 echo "Name: ${n}!"
 echo "Mail: ${m}!"
-
 git config --global user.email "${m}"
 git config --global user.name "${n}"
-
-git status
-
 git pull
 git add .
 git commit -a -m "automatic update"
