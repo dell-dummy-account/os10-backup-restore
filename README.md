@@ -30,8 +30,9 @@ Please check the file -> Create-Github-account.txt</br>
 3-
 When ready run:
 
+sudo chmod 755 backup.sh
 ./backup.sh</br>
-if local and github sync is needed or 
+if local backup and github sync is needed or 
 
 ansible-playbook -i inventory copyconfig.yml</br>
 if only local backup is needed
