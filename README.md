@@ -23,8 +23,8 @@ sudo apt -y install git </br>
 git clone https://github.com/val3r1o/os10-backup-restore.git </br>
 
 2-
-Create your own Github repository so you can sync on your own space</br>
-Change the name based on your github and project</br>
+FORK this Repository on your own Github  so you can sync on your own space</br>
+Change the branch name based on your project</br>
 Please check the file -> Create-Github-account.txt</br>
 
 3-
