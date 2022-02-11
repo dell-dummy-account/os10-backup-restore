@@ -3,8 +3,10 @@ git config --global user.name "YOURNAME"
 git config --global user.email "YOURMAIL"
 
 # You need to have a git account -> github.com
-# On GITHUB.COM CLONE this Repository
+# On your account FORK this Repository
 # ##
+
+# Create a new branch "Project1"
 
 echo "DESCRIPTION ON MAIN PAGE" >> README.md
 git add -A
