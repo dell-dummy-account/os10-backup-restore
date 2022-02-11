@@ -30,7 +30,7 @@ Please check the file -> Create-Github-account.txt</br>
 3-
 When ready run:
 
-sudo chmod 755 backup.sh
+sudo chmod 755 backup.sh </br>
 ./backup.sh</br>
 if local backup and github sync is needed or 
 
