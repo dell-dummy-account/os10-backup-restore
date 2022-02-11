@@ -20,7 +20,8 @@ git config --global user.name "${n}"
 git pull
 git add .
 git commit -a -m "automatic update"
-git push origin main
+read -p "Enter Your BRANCH " b
+git push origin "${b}"
 git status
 echo
 echo ------------------------------------------------------------------------------------------------------
