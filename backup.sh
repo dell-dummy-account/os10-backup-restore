@@ -11,18 +11,30 @@ echo ---------------------------------------------------------------------------
 ansible-playbook -i inventory copyconfig.yml
 
 git status
+git pull
 read -p "Enter Your user.name: " n
 read -p "Enter Your user.mail: " m
 echo "Name: ${n}!"
 echo "Mail: ${m}!"
+echo ----- THIS IS WHO YOUR ARE ------------------
 git config --global user.email "${m}"
 git config --global user.name "${n}"
-git pull
+echo ----- WHICH BRANCH IS ACTIVE ------------------
+git branch -a 
+
+read -p "Enter Your new project (branch) " b
+git checkout -b "${b}"
+
+echo ----- WHICH BRANCH IS ACTIVE now ------------------
+git branch -a 
+
 git add .
 git commit -a -m "automatic update"
-read -p "Enter Your BRANCH " b
-git push origin "${b}"
+
+git push -u origin "${b}"
+
 git status
+
 echo
 echo ------------------------------------------------------------------------------------------------------
 echo ------------------------------------------------------------------------------------------------------
